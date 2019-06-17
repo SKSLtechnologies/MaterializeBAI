@@ -1,0 +1,108 @@
+<html>
+    <head>
+        <title>Page2</title>
+
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/icon.css">
+
+        <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.7/js/materialize.min.js"></script>
+
+        <link rel="stylesheet" href="css/style1.css">
+    </head>
+
+
+<body>
+<div class="container">
+    <div class="row">
+        <form class="col m12" id="reg-form">
+
+          <div class="row">
+            <div class="input-field col s6">
+              <input placeholder="Conatct Person" id="contractor_name" type="text" class="validate" required>
+              <label for="contractor_name">Contact Person<span style="color: red">*</span></label>
+            </div>
+            <div class="input-field col s6">
+              <input placeholder="Organization Name" id="org_name" type="text" class="validate" required>
+              <label for="org_name">Organization Name</label>
+            </div>
+          </div>
+          <div class="row">
+            <div class="input-field col s6">
+              <input id="email" type="email" class="validate" required>
+              <label for="email">Email <span style="color: red">*</span></label>
+            </div>
+            <div class="input-field col s6">
+                <input id="website" type="text" class="validate" required>
+                <label for="website">Website</label>
+              </div>
+          </div>
+          <div class="row">
+            <div class="input-field">
+              <select multiple id ="contract_typ">
+                <option value="" disabled selected muted>Contract type</option>
+                <option value="1">Option 1</option>
+                <option value="2">Option 2</option>
+                <option value="3">Option 3</option>
+              </select>
+          <label for="contract_typ">Contract type <span style="color: red">*</span></label>
+          </div>
+          </div>
+          <p class="questions">Please select all the types of equipments you are using:</p>
+          <div class="form-row">
+            <div class="col">
+                <input type="checkbox" id="excavator" name="excavator" value="25/10 Ton Dumper"/>&nbsp;
+                <label for="excavator" > <span class="checkmark">Excavator</span></label>
+            </div>
+            <div class="col">
+                <input type="checkbox" id ="Hydra" name="Hydra" value="25/10 Ton Dumper"/>
+                <label for="Hydra"><span>Hydra</span></label>&nbsp;
+            </div>
+            <div class="col"> 
+                <input type="checkbox" id="Dumper" name="Dumper" value="25/10 Ton Dumper"/>
+                <label for="Dumper"><span>25/10 Ton Dumper</span></label>&nbsp;
+            </div>   
+          
+            <div class="col">
+                    <input type="checkbox" id="excavator" name="excavator" value="25/10 Ton Dumper"/>&nbsp;
+                    <label for="excavator" > <span class="checkmark">Excavator</span></label>
+            </div>
+          </div><div class="form-row">
+            <div class="col">
+              <input type="checkbox" id="excavator" name="excavator" value="25/10 Ton Dumper"/>&nbsp;
+              <label for="excavator" > <span class="checkmark">Excavator</span></label>
+      </div>
+            <div class="col">
+                <input type="checkbox" id ="Hydra" name="Hydra" value="25/10 Ton Dumper"/>
+                <label for="Hydra"><span>Hydra</span></label>&nbsp;
+            </div> 
+            <div class="col"> 
+              <input type="checkbox" id="Dumper" name="Dumper" value="25/10 Ton Dumper"/>
+              <label for="Dumper"><span>25/10 Ton Dumper</span></label>&nbsp;
+          </div>  
+          <div class="col">
+            <input type="checkbox" id="excavator" name="excavator" value="25/10 Ton Dumper"/>&nbsp;
+            <label for="excavator" > <span class="checkmark">Excavator</span></label>
+    </div>
+        </div> 
+        <br><br><br><br>
+        <div class="row">   
+          <button class="btn btn-large btn-success waves-effect waves-light right" type="next" name="action">Next
+            <i class="material-icons right">arrow_forward</i>
+          </button>
+         </div>      
+        </form>
+
+      </div>
+      <a title="Login" class="ngl btn-floating btn-large waves-effect waves-light pink"><i class="material-icons">input</i></a>
+    </div>
+
+    <script>
+    $(document).ready(function() {
+     $('select').material_select();
+    });
+    </script>
+
+  </body>
+
+</html>
